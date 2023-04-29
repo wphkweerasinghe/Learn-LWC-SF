@@ -1,0 +1,27 @@
+<!-- Starting with templete tag -->
+<template>
+    <div class="slds-grid slds-wrap">
+        <template for:each={items} for:item="item">
+            <div key={item.Name} class="slds-col slds-size_1-of-4 slds-var-p-around_small">
+                <article class="slds-card">
+                    <div class="slds-card__header slds-grid slds-grid_align-spread">
+                        <h2 class="slds-card__title slds-text-title_bold">{item.Name}</h2>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <div class="slds-media">
+                            <div class="slds-media__figure">
+                                <img src={item_pic} alt="Sample Image" class="slds-avatar slds-avatar_small" style="width: 100px; height: 100px;"/>
+                            </div>
+                            <div class="slds-media__body">
+                                <p><b>Price:</b> {item.Price__c}</p>
+                                <p><b>Quantity:</b> {item.Quantity__c}</p>
+                                <p><b>Model:</b> {item.Model__c}</p>
+                                <p><b>Brand:</b> {item.Brand__c}</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </template>
+    </div>
+</template>

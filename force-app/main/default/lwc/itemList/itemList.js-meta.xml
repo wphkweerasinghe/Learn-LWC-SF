@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<!-- Version of API -->
+    <apiVersion>56.0</apiVersion>
+	<!-- If we did not Exposed, we cannot see other component -->
+    <isExposed>true</isExposed>
+<targets>
+	<!-- where this component use/whether this component can be use in UI -->
+	<target>lightning__AppPage</target>
+	<target>lightning__RecordPage</target>
+	<target>lightning__HomePage</target>
+</targets>
+</LightningComponentBundle>
